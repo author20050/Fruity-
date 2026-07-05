@@ -22,7 +22,7 @@ services:
     command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
     environment:
       DATABASE_URL: postgresql+asyncpg://tonydynamic:tonydynamic123@postgres:5432/tonydynamic
-      SECRET_KEY: ${SECRET_KEY:-your-secret-key-here}
+      SECRET_KEY: ${sk_test_da4684890036aef32587f4276ef098e68bd4e301}
       PAYSTACK_PUBLIC_KEY: ${PAYSTACK_PUBLIC_KEY}
       PAYSTACK_SECRET_KEY: ${PAYSTACK_SECRET_KEY}
       DEBUG: "True"
